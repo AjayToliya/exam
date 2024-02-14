@@ -16,17 +16,18 @@ public:
 };
 
 int main() {
-    const int num = 3; 
-    Book books[num] = {
+    int num = 3; 
+    Book books[num]={
         Book("1", "1", 2022),
         Book("1", "1", 2023),
         Book("1", "1", 2024)
     };
 
-    for (int i = 0; i < num; ++i) {
+    for (int i = 0; i < num; ++i)
+	{
         cout << "Title = " << books[i].title << endl;
         cout << "Author = " << books[i].author << endl;
-        cout << "Published Year = " << books[i].publishedYear << endl;
+        cout << "Published Year = " << books[i].publishedYear<<endl;
         cout << endl;
     }
 
